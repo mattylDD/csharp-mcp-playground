@@ -1,0 +1,14 @@
+{
+	"servers": {
+		"McpApp": {
+			"type": "stdio",
+			"command": "dotnet",
+			"args": [
+				"run",
+                "--project",
+                "C:\\Users\\tylka\\dev\\McpPoc\\McpPoc\\McpApp\\McpApp.csproj"
+			]
+		}
+	},
+	"inputs": []
+}
