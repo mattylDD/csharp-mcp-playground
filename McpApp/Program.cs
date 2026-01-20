@@ -15,7 +15,7 @@ builder.Logging.AddConsole(consoleLogOptions =>
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()
-    .WithToolsFromAssembly(typeof(DynamicToolsMcpApi).Assembly);
+    .WithToolsFromAssembly(typeof(TestTools).Assembly);
 
 await builder.Build().RunAsync();
 
