@@ -12,6 +12,10 @@ builder.Logging.AddConsole(consoleLogOptions =>
     consoleLogOptions.LogToStandardErrorThreshold = LogLevel.Trace;
 });
 
+builder.Logging.AddFilter("ModelContextProtocol", LogLevel.Trace);
+builder.Logging.AddFilter("Microsoft", LogLevel.Warning);
+builder.Logging.AddFilter("System", LogLevel.Warning);
+
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()

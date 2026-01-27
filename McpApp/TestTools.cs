@@ -13,19 +13,11 @@ public static class TestTools
     {
         if (message == null) return string.Empty;
 
-        Console.WriteLine($"\n\nMESSAGE: {message}\n\n");
-
         var chars = message.ToCharArray();
-
-        Console.WriteLine($"\n\nchars: {chars}\n\n");
 
         Array.Reverse(chars);
 
-        Console.WriteLine($"\n\nreversed chars: {chars}\n\n");
-
         var reversed = new string(chars);
-
-        Console.WriteLine($"\n\nReversed MESSAGE: {reversed}\n\n");
 
         return reversed;
     }
